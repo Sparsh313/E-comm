@@ -1,6 +1,6 @@
 // ecommerce-backend/controllers/productController.js
 
-const Product = require("../models/Product");
+const Product = require("../models/productModel");
 
 exports.createProduct = async (req, res) => {
   try {
@@ -36,7 +36,7 @@ exports.getAllProducts = async (req, res) => {
         $lte: Number(req.query.maxPrice),
       };
     }
-    // same isme bhi if (/api/products?size=M,L) 
+    // same isme bhi if (/api/products?size=M,L)
     if (req.query.size) {
       const sizes = req.query.size.split(",");
       queryObj.size = { $in: sizes };

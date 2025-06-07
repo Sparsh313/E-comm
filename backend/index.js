@@ -25,12 +25,14 @@ app.use(limiter);
 
 const authRouter = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
+const cartRoutes = require("./routes/cartRoutes");
 
 // Mount routes
 app.use("/api/auth", authRouter);
 app.use("/api/products", productRoutes);
+app.use("/api/cart", cartRoutes);
 
-//<Checking is API live>  
+//<Checking is API live>
 app.get("/", (req, res) => {
   res.send("API is running…");
 });
