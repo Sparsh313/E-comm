@@ -21,4 +21,4 @@ router.post("/", protect, authorizeRole("seller"), createProduct);
 router.put("/:id", protect, authorizeRole("seller"), updateProduct);
 router.delete("/:id", protect, authorizeRole("seller"), deleteProduct);
 
-module.exports = router;
+module.exports   = router;

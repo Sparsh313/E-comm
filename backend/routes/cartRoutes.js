@@ -8,11 +8,11 @@ const {
   updateCartItem,
   removeCartItem,
   clearCart,
-} = require("../controllers/cartControllers");
+} = require("../controllers/cartController");
 
 const { protect, authorizeRole } = require("../middlewares/authMiddleware");
 
-router.get("/",protect,authorizeRole("buyer"), getCart);
+router.get("/", protect, authorizeRole("buyer"), getCart);
 router.post("/", protect, authorizeRole("buyer"), addToCart);
 router.put("/", protect, authorizeRole("buyer"), updateCartItem);
 router.delete("/:productId", protect, authorizeRole("buyer"), removeCartItem);
