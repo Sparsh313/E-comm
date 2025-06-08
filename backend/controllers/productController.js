@@ -6,12 +6,15 @@ exports.createProduct = async (req, res) => {
   try {
     const { title, description, price, images, category, size, stock } =
       req.body;
+
+    const image = req.file?.path;
+
     const newProduct = new Product({
       seller: req.user._id,
       title,
       description,
       price,
-      images,
+      images: [image],
       category,
       size,
       stock,
