@@ -26,13 +26,22 @@ Node.js + Express + MongoDB (Assumed backend)
 🔧 Setup Instructions
 Clone the repository:
 
+```bash
 git clone https://github.com/Sparsh313/E-comm.git
 cd E-comm/my-js-app
-Install dependencies:
-npm install
-Start the app (using Expo):
+```
 
+
+Install dependencies:
+```bash
+npm install
+```
+
+Start the app (using Expo):
+```bash
 npx expo start
+```
+
 Backend Setup:
 
 Make sure your backend server is running.
