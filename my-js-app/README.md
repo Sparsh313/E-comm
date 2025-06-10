@@ -26,8 +26,8 @@ Node.js + Express + MongoDB (Assumed backend)
 🔧 Setup Instructions
 Clone the repository:
 
-git clone https://github.com/your-username/react-native-ecommerce-app.git
-cd react-native-ecommerce-app
+git clone https://github.com/Sparsh313/E-comm.git
+cd E-comm/my-js-app
 Install dependencies:
 npm install
 Start the app (using Expo):
